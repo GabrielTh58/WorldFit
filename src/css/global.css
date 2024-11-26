@@ -35,4 +35,9 @@
         @apply bg-gradient-to-tl from-amber-400 to-zinc-900
 
     }
+
+    .border-gradient {
+        @apply border-b border-transparent;
+        border-image: linear-gradient(to left, rgba(56, 63, 69, 0), #2c3338, rgba(26, 32, 35, 0)) 1;
+      }
 }

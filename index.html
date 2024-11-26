@@ -13,11 +13,11 @@
 <body>
   <div class="bg-cover bg-center min-h-screen min-w-screen bg-zinc-900 text-white">
     <div class="mx-auto w-full">
-      <header class="flex justify-between items-center p-4 mb-16">
+      <header class="flex justify-between items-center p-4 mb-14">
         <!-- Logo -->
         <div class="flex items-center">
           <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
-          <h1 class="text-lg font-bold text-white ml-2">WorldFit</h1>
+          <h1 class="text-xl font-bold text-white ml-2">WorldFit</h1>
         </div>
 
         <!-- Navigation -->
@@ -44,12 +44,12 @@
       </header>
 
       <!-- Main Section -->
-      <main class="flex flex-col flex-wrap justify-between items-center px-4 py-8">
+      <main class="flex flex-col flex-wrap items-center space-y-20">
         <!-- Home Section -->
-        <section class="text-white max-w-sm mb-20">
-          <div class="mb-16">
-            <h2 class="titulo-secao mb-8">Alcance seus Limites e chegue ao Próximo Nível</h2>
-            <p class="text-lg mb-9 leading-loose text-zinc-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor laoreet elit massa interdum mi. Ultrices.</p>
+        <section class="text-white max-w-sm mb-20 px-4">
+          <div class="mb-24">
+            <h2 class="titulo-secao text-2xl mb-8">Alcance seus Limites e chegue ao Próximo Nível</h2>
+            <p class=" mb-9 leading-loose text-zinc-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor laoreet elit massa interdum mi. Ultrices.</p>
             <button class="bg-yellow-500 py-3.5 px-9 font-bold hover:bg-yellow-400">Saiba Mais!</button>
           </div>
 
@@ -63,7 +63,7 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section class="max-w-sm flex flex-col items-center relative z-10 mb-20">
+        <section class="max-w-sm flex flex-col items-center relative z-10 mb-20 px-4">
           <!-- <div class="absolute -top-36 -right-80 w-96 h-80 bg-[radial-gradient(ellipse_at_center,_rgba(243,_201,_45,_0.6)_50%,_transparent_70%)]"></div> -->
           <h2 class="titulo-secao mb-8">Por que nos Escolher ?</h2>
 
@@ -126,7 +126,7 @@
         </section>
 
         <!-- Serviços Section -->
-        <section class="flex flex-col items-center mb-32">
+        <section class="flex flex-col items-center mb-32 px-4">
           <h2 class="titulo-secao text-white mb-20">Serviços</h2>
 
           <div class="mb-20">
@@ -171,8 +171,8 @@
         </section>
 
         <!-- Price Section -->
-        <section class="bg-[url('./src/images/price-bg.jpg')] -mx-4 py-8 px-4 bg-contain flex flex-col items-center space-y-16 mb-28">
-          <h2 class="titulo-secao mb-20">
+        <section class="bg-[url('./src/images/price-bg.jpg')] py-8 px-4 bg-contain flex flex-col items-center space-y-16 mb-28">
+          <h2 class="titulo-secao mb-20 text-center">
             Alcance Seus Objetivos com o Preço Ideal
           </h2>
 
@@ -249,9 +249,100 @@
         </section>
 
         <!-- Gallery Section -->
-        <section>
-          <h2 class="titulo-secao mb-20">Galeria</h2>
+        <section class="px-2">
+          <div class="text-center mb-10">
+            <h2 class="titulo-secao mb-5">Galeria</h2>
+            <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quam corporis magni deserunt ratione, voluptatibus adipisci.</p>
+          </div>
+        
+          <div class="flex items-ceneter gap-4">
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <img src="./src/images/home-bg.jpg" alt="">
+            </div>
+            <div>
+              <img src="./src/images/home-bg.jpg" alt="">
+            </div>
+          </div>
         </section>
+
+        <!-- FAQ Section -->
+        <section class="w-full text-center">
+          <h2 class="titulo-secao mb-10">FAQ</h2>
+
+          <div class="flex flex-col w-full p-4 border-b border-gradient">
+            <div class="flex items-center justify-between w-full">
+              <p>What is different of VR and AR?</p>
+              <div class="w-10 h-10 rounded-full border border-yellow-500 flex items-center justify-center">
+                icon
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer class="w-full flex flex-col space-y-6">
+          <div class="space-y-12 px-4">
+            <div class="flex items-center justify-start">
+              <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
+              <h3 class="text-lg font-bold text-white ml-1">WorldFit</h1>
+            </div>
+  
+            <p class="bold tracking-wide">Horario de atendimento Lorem Ipsum sit dolor Lorem Ipsum</p>
+  
+            <div class="flex items-center border-b border-gradient">
+  
+            </div>
+  
+            <div class="flex flex-col ">
+              <div class="flex items-start justify-between">
+                <div class="flex flex-col items-start justify-center">
+                  <h4 class="text-xl mb-5">Páginas</h4>
+                  <ul class="flex flex-col space-y-3 text-zinc-400 font-light">
+                    <li>
+                      <a href="#home">Página Inicial</a>
+                    </li>
+                    <li>
+                      <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                      <a href="#precos">Preços</a>
+                    </li>
+                    <li>
+                      <a href="#galeria">Galeria</a>
+                    </li>
+                    <li>
+                      <a href="#faq">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="flex flex-col items-start justify-center">
+                  <h4 class="text-xl mb-5">Endereço</h4>
+                  <p class="text-zinc-400 font-light">Rua fulano de tal, 222</p>
+                </div>
+              </div>
+            </div>
+  
+            <div>
+              <div class="flex flex-col items-start justify-center mb-24 mt-12">
+                <h4 class="text-xl mb-5">Contato</h4>
+                <div class="text-zinc-400 font-light flex flex-col gap-2">
+                  <span >Email@email.com</span>
+                  <span >tel: () 9999-9000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-zinc-800 h-20 flex items-center justify-center text-xs text-zinc-200">
+              <span">© 2024 Gabriel Correia - Todos os direitos reservados.</span>
+          </div>
+        </footer>
       </main>
     </div>
   </div>
