@@ -4,28 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --primary-color: #F3C92D;
-    /* --primary-color-opacity: rgba(243, 201, 45, 0.8); */
-    --secondary-color: #34d399;
-
-    --primary-color-gradient: linear-gradient(to right, rgba(243, 201, 45, 0.4), #D9A827);
-    --custom-gradient: linear-gradient(to right, 
-        #171717 0%, 
-        #323335 0%, 
-        #5A5A5A 49%, 
-        #171717 100%);    
-
-    --fonte-primaria: 'DM Sans', sans-serif;
-    --fonte-secundaria: 'Bruno Ace', 'DM Sans', sans-serif;
-}
-
 @layer base {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    body{
         font-family: var(--fonte-primaria);
         color: white;
+    }
+
+    :root {
+        --primary-color: #F3C92D;
+
+        --fonte-primaria: 'DM Sans', sans-serif;
+        --fonte-secundaria: 'Bruno Ace', 'DM Sans', sans-serif;
+    }
+}
+
+@layer components {
+    .titulo-secao {
+        @apply text-3xl font-bold font-secondary;
+    }
+
+    .gradiente-card {
+        /* @apply bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r */
+        /* @apply bg-conic-to-b from-gray-900 via-gray-100 to-gray-900 */
+        @apply bg-gradient-to-tl from-amber-400 to-zinc-900
+
     }
 }

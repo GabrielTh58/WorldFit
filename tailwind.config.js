@@ -3,18 +3,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-color': 'var(--primary-color)',
-        'primary-color-gradient': 'var(--primary-color-gradient)',
-        'secondary-color': 'var(--secondary-color)',
+        primary: "var(--primary-color)",
       },
       backgroundImage: {
-        'custom-gradient': 'var(--custom-gradient)', 
+        "bg-price": "url('./src/images/price-bg.jpg')", // n pegou
       },
       fontFamily: {
-        'DMSans': 'var(--fonte-primaria)',
-        'BrunoAce': 'var(--fonte-secundaria)',
+        primary: "var(--fonte-primaria)",
+        secondary: "var(--fonte-secundaria)",
       },
     },
   },
   plugins: [],
-}
+};
