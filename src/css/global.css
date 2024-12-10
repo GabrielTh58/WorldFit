@@ -26,18 +26,31 @@
 
 @layer components {
     .titulo-secao {
-        @apply text-3xl font-bold font-secondary;
+        @apply text-3xl font-bold font-secondary lg:text-4xl xl:text-5xl;
     }
 
     .gradiente-card {
         /* @apply bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r */
         /* @apply bg-conic-to-b from-gray-900 via-gray-100 to-gray-900 */
-        @apply bg-gradient-to-tl from-amber-400 to-zinc-900
+        @apply bg-gradient-to-tl from-amber-400 to-zinc-900;
 
     }
 
     .border-gradient {
         @apply border-b border-transparent;
         border-image: linear-gradient(to left, rgba(56, 63, 69, 0), #2c3338, rgba(26, 32, 35, 0)) 1;
-      }
+    }
+
+    .card-imagem{
+        @apply w-[320px] h-48 sm:w-[384px] sm:h-56 md:w-[448px] md:h-64 lg:w-[512px] lg:h-72 xl:w-[576px] xl:h-80;
+    }
+
+    .card-responsivo{
+        @apply  xl:max-w-96 xl:h-[565px];
+    }
+
+    .botao-card{
+        @apply  font-black text-xl py-3.5 w-full rounded-sm bg-gradient-to-r from-[#1C1C1C] to-[#3A3A3A] text-white;
+        @apply  hover:opacity-80
+    }
 }
