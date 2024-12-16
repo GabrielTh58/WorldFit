@@ -13,8 +13,8 @@
 
 <body>
   <div class="min-h-screen min-w-screen bg-zinc-900 text-white">
-    <div class="w-full bg-[url('./src/images/bg-home-main.webp')] bg-no-repeat bg-cover h-screen">
-      <header class="flex justify-between items-center p-4 mb-14">
+    <div>
+      <header class="flex justify-between items-center p-4">
         <!-- Logo -->
         <div class="flex items-center">
           <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
@@ -50,14 +50,21 @@
       <!-- Main Section -->
       <main class="flex flex-col flex-wrap items-center space-y-36">
         <!-- Home Section -->
-        <section
-          class="w-full h-screen  text-white mb-20 px-4 max-w-sm sm:max-w-md md:max-w-xl lg:max-w-full lg:flex lg:justify-center lg:items-center lg:gap-6 lg:px-0 lg:mt-12 xl:gap-12">
-          <div class="mb-24 flex flex-col items-start lg:max-w-md lg:mb-0 lg:px-2">
-            <h2 class="titulo-secao leading-5 tracking-widest  text-2xl mb-8 lg:text-3xl xl:text-4xl ">Transforme seu
-              corpo, conquiste sua <span class="text-yellow-400">Melhor Versão!</span></h2>
-            <p class=" mb-16 xl:mb-10 leading-loose text-zinc-400">Treinos eficazes, suporte completo e resultados
+        <section class="
+          bg-[url('./src/images/bg-home-main.webp')] bg-no-repeat bg-cover bg-center
+          flex flex-col items-center justify-center w-full h-screen text-white mb-20 px-4
+          sm:max-w-md 
+          md:max-w-xl 
+          lg:max-w-full lg:flex-row lg:justify-center lg:items-center lg:gap-6 lg:px-0 lg:mt-12 
+          xl:gap-12
+        ">
+          <div class="flex flex-col items-start justify-center mb-24 lg:max-w-md lg:mb-0 lg:px-2">
+            <h2 class="titulo-secao text-2xl leading-5 tracking-widest mb-8 lg:text-3xl xl:text-4xl">
+              Transforme seu corpo, conquiste sua <span class="text-yellow-400">Melhor Versão!</span>
+            </h2>
+            <p class="text-zinc-400 leading-loose mb-16 xl:mb-10">Treinos eficazes, suporte completo e resultados
               garantidos. Comece hoje mesmo!</p>
-            <button class="bg-yellow-500 gradient-card py-3.5 px-9 font-black hover:bg-yellow-400 ">Saiba Mais!</button>
+            <button class="botao-principal">Saiba Mais!</button>
           </div>
 
           <!-- Image Section -->
@@ -72,13 +79,17 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section class="max-w-sm lg:max-w-5xl flex flex-col items-center relative z-10 px-4">
+        <section class="
+          flex flex-col items-center relative max-w-sm
+          z-10 px-4
+          lg:max-w-5xl
+          ">
+
           <h2 class="titulo-secao mb-20 text-center lg:mb-36">Por que nos Escolher ?</h2>
-          <div class="lg:flex lg:justify-between lg:gap-8 w-full">
-            <div class="relative bg-custom-gradient border border-yellow-500 rounded-xl
-               p-4 flex flex-col max-w-xs max-h-52 items-center mt-16 md:max-w-sm lg:w-96 lg:h-56">
-              <div
-                class="absolute top-[-30px] z-10 w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center">
+
+          <div class="w-full lg:flex lg:justify-between lg:gap-8">
+            <div class="container-porque-nos-escolher border-yellow-500 max-h-52 mt-16 md:max-w-sm lg:w-96 lg:h-56">
+              <div class="icone-porque-nos-escolher bg-yellow-500">
                 <span>
                   <svg width="38" height="40" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -96,18 +107,15 @@
                   </svg>
                 </span>
               </div>
-              <div class="mt-8 mb-4 flex flex-col items-center">
-                <h3 class="font-bold text-2xl mb-4">Musculação</h3>
-                <p class="text-center text-zinc-400 w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Tortor
-                  laoreet elit massa</p>
+              <div class="container-descricao-porque-nos-ecscolher">
+                <h3 class="titulo-porque-nos-escolher">Musculação</h3>
+                <p class="descricao-porque-nos-escolher">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tortor laoreet elit massa</p>
               </div>
             </div>
 
-            <div class="relative bg-custom-gradient border border-zinc-700 rounded-xl
-               p-4 flex flex-col max-w-xs max-h-48 items-center mt-20 md:max-w-sm lg:w-[345px] lg:h-48">
-              <div
-                class="absolute top-[-30px] z-10 w-16 h-16 rounded-full border border-yellow-500 bg-zinc-950 flex items-center justify-center">
+            <div class="container-porque-nos-escolher border-zinc-700 max-h-48 ">
+              <div class="icone-porque-nos-escolher border border-yellow-500 bg-zinc-950">
                 <span>
                   <svg width="46" height="38" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -125,17 +133,15 @@
                   </svg>
                 </span>
               </div>
-              <div class="mt-8 mb-4 flex flex-col items-center">
-                <h3 class="font-bold text-2xl mb-4">Musculação</h3>
-                <p class="text-center text-zinc-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
+              <div class="container-descricao-porque-nos-ecscolher">
+                <h3 class="titulo-porque-nos-escolher">Musculação</h3>
+                <p class="descricao-porque-nos-escolher">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
                   laoreet elit massa interdum mi</p>
               </div>
             </div>
 
-            <div class="relative bg-custom-gradient border border-zinc-700 rounded-xl
-               p-4 flex flex-col max-w-xs max-h-48 items-center mt-20 md:max-w-sm lg:w-[345px] lg:h-48">
-              <div
-                class="absolute top-[-30px] z-10 w-16 h-16 rounded-full border border-yellow-500 bg-zinc-950 flex items-center justify-center">
+            <div class="container-porque-nos-escolher border-zinc-700 max-h-48 ">
+              <div class="icone-porque-nos-escolher border border-yellow-500 bg-zinc-950">
                 <span>
                   <svg width="46" height="38" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -153,26 +159,28 @@
                   </svg>
                 </span>
               </div>
-              <div class="mt-8 mb-4 flex flex-col items-center">
-                <h3 class="font-bold font-fonte-secundaria text-2xl mb-4">Musculação</h3>
-                <p class="text-center text-zinc-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
+              <div class="container-descricao-porque-nos-ecscolher">
+                <h3 class="titulo-porque-nos-escolher">Musculação</h3>
+                <p class="descricao-porque-nos-escolher">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
                   laoreet elit massa interdum mi</p>
               </div>
             </div>
           </div>
-
         </section>
 
         <!-- Serviços Section-->
-        <section class="flex flex-col items-center px-4 space-y-24 md:space-y-40 lg:space-y-56">
-          <h2 class="titulo-secao text-white mb-20 lg:mb-0">Serviços</h2>
+        <section class="
+          flex flex-col items-center
+          py-16 px-4 space-y-24
+          md:space-y-40 lg:space-y-56
+        ">
+          <h2 class="titulo-secao mb-20 lg:mb-0">Serviços</h2>
 
-          <div class="flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-center lg:gap-24">
-            <div class="mb-20 lg:mb-0 lg:order-2 lg:w-1/3 flex flex-col items-start md:items-center lg:items-start justify-center">
-              <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 lg:mb-20 text-yellow-500">Musculação</h3>
-              <p class="text-lg mb-9 lg:mb-12 leading-loose text-zinc-400 md:w-3/4 text-center lg:text-start">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Tortor laoreet elit massa interdum mi. Ultrices.</p>
-              <button class="text-lg font-black bg-yellow-500 py-3.5 px-9 hover:bg-yellow-400">Saiba
+          <div class="container-servicos">
+            <div class="container-descricao-servicos lg:order-2">
+              <h3 class="servicos">Musculação</h3>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor laoreet elit massa interdum mi. Ultrices.</p>
+              <button class="botao-principal">Saiba
                 Mais!</button>
             </div>
 
@@ -187,13 +195,12 @@
 
           </div>
 
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-24">
-            <div class="mb-20 lg:mb-0 lg:order-1 lg:w-1/3 flex flex-col items-start justify-center">
-              <h3 class="text-2xl lg:text-3xl font-bold mb-8 lg:mb-20 text-yellow-500">Musculação</h3>
-              <p class="text-lg mb-9 lg:mb-12 leading-loose text-zinc-400">Lorem ipsum dolor sit amet, consectetur
+          <div class="container-servicos">
+            <div class="container-descricao-servicos lg:order-1">
+              <h3 class="servicos">Musculação</h3>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit Tortor laoreet elit massa interdum mi. Ultrices.</p>
-              <button class="text-lg font-black bg-yellow-500 py-3.5 px-9 font-bold hover:bg-yellow-400">Saiba
-                Mais!</button>
+              <button class="botao-principal">Saiba Mais!</button>
             </div>
 
             <div class="lg:order-2 card-imagem ml-4">
@@ -206,15 +213,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-24">
-            <div class="mb-20 lg:mb-0 lg:order-2 lg:w-1/3 flex flex-col items-start justify-center">
-              <h3 class="text-2xl lg:text-3xl font-bold mb-8 lg:mb-20 text-yellow-500">Musculação</h3>
-              <p class="text-lg mb-9 lg:mb-12 leading-loose text-zinc-400">Lorem ipsum dolor sit amet, consectetur
+          <div class="container-servicos">
+            <div class="container-descricao-servicos lg:order-2">
+              <h3 class="servicos">Musculação</h3>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur
                 adipiscing
                 elit.
                 Tortor laoreet elit massa interdum mi. Ultrices.</p>
-              <button class="text-lg font-black bg-yellow-500 py-3.5 px-9 font-bold hover:bg-yellow-400">Saiba
-                Mais!</button>
+                <button class="botao-principal">Saiba Mais!</button>
             </div>
 
             <div class="lg:order-1 card-imagem">
@@ -227,15 +233,11 @@
             </div>
           </div>
 
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-24">
-            <div class="mb-20 lg:mb-0 lg:order-2 lg:w-1/3 flex flex-col items-start justify-center">
-              <h3 class="text-2xl lg:text-3xl font-bold mb-8 lg:mb-20 text-yellow-500">Musculação</h3>
-              <p class="text-lg mb-9 lg:mb-12 leading-loose text-zinc-400">Lorem ipsum dolor sit amet, consectetur
-                adipiscing
-                elit.
-                Tortor laoreet elit massa interdum mi. Ultrices.</p>
-              <button class="text-lg font-black bg-yellow-500 py-3.5 px-9 font-bold hover:bg-yellow-400">Saiba
-                Mais!</button>
+          <div class="container-servicos">
+            <div class="container-descricao-servicos lg:order-2">
+              <h3 class="servicos">Musculação</h3>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor laoreet elit massa interdum mi. Ultrices.</p>
+              <button class="botao-principal">Saiba Mais!</button>
             </div>
 
             <div class="lg:order-2 card-imagem ml-4">
@@ -251,27 +253,31 @@
         </section>
 
         <!-- Price Section -->
-        <section class="bg-[url('./src/images/price-bg.jpg')] py-16 px-4 bg-contain w-full
-                        space-y-16 mb-28">
+        <section class="
+          w-full bg-[url('./src/images/price-bg.jpg')] bg-contain
+          py-16 px-4 space-y-16 mb-28
+        ">
 
-          <h2 class="titulo-secao mb-20 text-center px-4">
+          <h2 class="titulo-secao text-center mb-20 px-4">
             Alcance Seus Objetivos com o Preço Ideal
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 place-items-center ">
-            <div class="gradiente-card shadow-md max-w-80 max-h-[485px] flex flex-col items-start border
-                     border-transparent rounded-xl px-6 py-4 card-preco-responsivo">
-              <p class="font-bold mr-2 mb-4 text-3xl xl:text-4xl">
+          <div class="
+            grid grid-cols-1 gap-8 place-items-center
+            md:grid-cols-2 xl:grid-cols-4
+          ">
+            <div class="card-preco gradiente-card">
+              <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
-              <h3 class="font-bold mb-2 text-2xl xl:text-3xl">Premium ++</h3>
+              <h3 class="titulo-card-preco">Premium ++</h3>
               <p class="text-zinc-400 mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
-              <div class="w-full h-[1px] bg-white mb-5"></div>
+              <div class="divider-card-preco"></div>
 
-              <ul class="flex flex-col space-y-5 font-bold mb-6 xl:mb-12">
+              <ul class="lista-card-preco">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
@@ -283,47 +289,20 @@
               </button>
             </div>
 
-            <div class="bg-[rgba(28,28,28,0.7)] shadow-md max-w-80 max-h-[485px] flex flex-col items-start border
-                     border-transparent rounded-xl px-6 py-4 card-preco-responsivo">
-              <p class="font-bold mr-2 mb-4 text-3xl xl:text-4xl">
-                R$90 <span class="text-sm font-thin">/ mês</span>
-              </p>
-            
-              <h3 class="font-bold mb-2 text-2xl xl:text-3xl">Premium ++</h3>
-
-              <p class="text-zinc-400 mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing
-              </p>
-
-              <div class="w-full h-[1px] bg-white mb-5"></div>
-
-              <ul class="flex flex-col space-y-5 font-bold mb-6 xl:mb-12">
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-              </ul>
-
-              <button class="botao-card-preco">
-                Escolher
-              </button>
-            </div>
-
-            <div class="bg-[rgba(28,28,28,0.7)] shadow-md max-w-80 max-h-[485px] flex flex-col items-start border
-                     border-transparent rounded-xl px-6 py-4 card-preco-responsivo">
-              <p class="font-bold mr-2 mb-4 text-3xl xl:text-4xl">
+            <div class="card-preco bg-[rgba(28,28,28,0.7)]">
+              <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
             
-              <h3 class="font-bold mb-2 text-2xl xl:text-3xl">Premium ++</h3>
-              
+              <h3 class="titulo-card-preco">Premium ++</h3>
+
               <p class="text-zinc-400 mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
-              <div class="w-full h-[1px] bg-white mb-5"></div>
+              <div class="divider-card-preco"></div>
 
-              <ul class="flex flex-col space-y-5 font-bold mb-6 xl:mb-12">
+              <ul class="lista-card-preco">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
@@ -335,21 +314,20 @@
               </button>
             </div>
 
-            <div class="bg-[rgba(28,28,28,0.7)] shadow-md max-w-80 max-h-[485px] flex flex-col items-start border
-                     border-transparent rounded-xl px-6 py-4 card-preco-responsivo">
-              <p class="font-bold mr-2 mb-4 text-3xl xl:text-4xl">
+            <div class="card-preco bg-[rgba(28,28,28,0.7)]">
+              <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
             
-              <h3 class="font-bold mb-2 text-2xl xl:text-3xl">Premium ++</h3>
-              
+              <h3 class="titulo-card-preco">Premium ++</h3>
+
               <p class="text-zinc-400 mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
-              <div class="w-full h-[1px] bg-white mb-5"></div>
+              <div class="divider-card-preco"></div>
 
-              <ul class="flex flex-col space-y-5 font-bold mb-6 xl:mb-12">
+              <ul class="lista-card-preco">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
@@ -360,6 +338,32 @@
                 Escolher
               </button>
             </div>
+
+            <div class="card-preco bg-[rgba(28,28,28,0.7)]">
+              <p class="preco-card-preco">
+                R$90 <span class="text-sm font-thin">/ mês</span>
+              </p>
+            
+              <h3 class="titulo-card-preco">Premium ++</h3>
+
+              <p class="text-zinc-400 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+
+              <div class="divider-card-preco"></div>
+
+              <ul class="lista-card-preco">
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+
+              <button class="botao-card-preco">
+                Escolher
+              </button>
+            </div>
+
           </div>
         </section>
 
@@ -401,23 +405,27 @@
         </section>
 
         <!-- Footer Section -->
-        <footer class="w-full flex flex-col space-y-6">
-          <div class="flex flex-col space-y-12 px-8 lg:flex-row lg:items-center lg:justify-evenly lg:mb-12 lg:h-full">
+        <footer class="flex flex-col w-full space-y-6">
+          <div class="
+            flex flex-col
+            space-y-12 px-8
+            lg:flex-row lg:items-center lg:justify-evenly lg:mb-12 lg:h-full
+          ">
             <div class="flex flex-col lg:w-[30%]">
               <div class="flex items-center justify-start md:mb-8 lg:mb-12">
                 <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
-                <h3 class="text-lg font-bold text-white ml-1 lg:text-2xl xl:text-3xl">WorldFit</h1>
+                <h3 class="text-lg text-white font-bold ml-1 lg:text-2xl xl:text-3xl">WorldFit</h1>
               </div>
   
-              <p class="bold tracking-wide text-zinc-200">Horario de atendimento Lorem Ipsum sit dolor Lorem Ipsum</p>
+              <p class="font-bold tracking-wide text-zinc-200">Horario de atendimento Lorem Ipsum sit dolor Lorem Ipsum</p>
             </div>
             
             <div class="border border-gradient lg:h-64 lg:border-2 lg:border-zinc-800"></div>
 
             <div class="flex flex-col flex-wrap">
-              <div class="flex items-start justify-between gap-4 lg:gap-10 xl:gap-x-20 flex-wrap">
+              <div class="flex flex-wrap items-start justify-between gap-4 lg:gap-10 xl:gap-x-20">
                 <div class="flex flex-col items-start justify-center mb-12 lg:mb-0">
-                  <h4 class="text-xl mb-5 text-zinc-200 xl:text-2xl">Páginas</h4>
+                  <h4 class="titulo-secoes-footer">Páginas</h4>
                   <ul class="flex flex-col space-y-3 text-zinc-400 font-light">
                     <li>
                       <a href="#home">Página Inicial</a>
@@ -438,15 +446,15 @@
                 </div>
 
                 <div class="flex flex-col items-start justify-center">
-                  <h4 class="text-xl mb-5 text-zinc-200 xl:text-2xl">Endereço</h4>
+                  <h4 class="titulo-secoes-footer">Endereço</h4>
                   <p class="text-zinc-400 font-light">Rua fulano de tal, 222</p>
                 </div>
 
                 <div class="flex flex-col items-start justify-start mb-24 ">
-                  <h4 class="text-xl mb-5 text-zinc-200 xl:text-2xl">Contato</h4>
-                  <div class="text-zinc-400 font-light flex flex-col gap-2">
-                    <span>Email@email.com</span>
-                    <span>tel: () 9999-9000</span>
+                  <h4 class="titulo-secoes-footer">Contato</h4>
+                  <div class="flex flex-col gap-2 text-zinc-400 font-light ">
+                    <p>Email@email.com</p>
+                    <p>tel: () 9999-9000</p>
                   </div>
                 </div>
               </div>
@@ -454,7 +462,7 @@
 
           </div>
 
-          <div class="bg-zinc-800 h-20 flex items-center justify-center text-xs text-zinc-200">
+          <div class="flex items-center justify-center h-20 bg-zinc-800 text-zinc-200 text-xs">
             <span">© 2024 Gabriel Correia - Todos os direitos reservados.</span>
           </div>
         </footer>
