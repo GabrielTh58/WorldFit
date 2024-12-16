@@ -643,13 +643,13 @@ body{
     width: 576px;
   }
 
-  .card-responsivo{
+  .card-preco-responsivo{
     height: 565px;
     max-width: 24rem;
   }
 }
 
-.botao-card{
+.botao-card-preco{
   width: 100%;
   border-radius: 0.125rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -666,7 +666,7 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.botao-card:hover{
+.botao-card-preco:hover{
   opacity: 0.8;
 }
 
@@ -696,6 +696,10 @@ body{
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-14{
@@ -758,10 +762,6 @@ body{
   margin-right: 0.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-16{
   margin-top: 4rem;
 }
@@ -816,6 +816,10 @@ body{
 
 .h-\[2px\]{
   height: 2px;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .max-h-48{
@@ -1062,12 +1066,24 @@ body{
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[url\(\'\.\/src\/images\/bg-home-main\.webp\'\)\]{
+  background-image: url('./src/images/bg-home-main.webp');
+}
+
 .bg-\[url\(\'\.\/src\/images\/price-bg\.jpg\'\)\]{
   background-image: url('./src/images/price-bg.jpg');
 }
 
 .bg-contain{
   background-size: contain;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-2{
@@ -1091,6 +1107,11 @@ body{
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-9{
@@ -1273,6 +1294,10 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
   .md\:w-3\/4{
     width: 75%;
   }
@@ -1346,12 +1371,24 @@ body{
     height: 14rem;
   }
 
+  .lg\:h-64{
+    height: 16rem;
+  }
+
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:w-1\/3{
     width: 33.333333%;
   }
 
   .lg\:w-96{
     width: 24rem;
+  }
+
+  .lg\:w-\[30\%\]{
+    width: 30%;
   }
 
   .lg\:w-\[345px\]{
@@ -1390,6 +1427,14 @@ body{
     justify-content: space-between;
   }
 
+  .lg\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
+  }
+
   .lg\:gap-24{
     gap: 6rem;
   }
@@ -1408,6 +1453,15 @@ body{
     margin-bottom: calc(14rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:border-2{
+    border-width: 2px;
+  }
+
+  .lg\:border-zinc-800{
+    --tw-border-opacity: 1;
+    border-color: rgb(39 39 42 / var(--tw-border-opacity, 1));
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1420,6 +1474,11 @@ body{
 
   .lg\:text-start{
     text-align: start;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl{
@@ -1450,8 +1509,14 @@ body{
     gap: 3rem;
   }
 
-  .xl\:text-start{
-    text-align: start;
+  .xl\:gap-x-20{
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:text-3xl{
