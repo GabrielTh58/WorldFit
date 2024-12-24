@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="./dist/output.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/src/assets/css/all.min.css" rel="stylesheet">
+  <script defer src="./src/js/script.js"></script>
   <title>WorldFit</title>
 </head>
 
 <body>
-  <div class="min-h-screen min-w-screen bg-zinc-900 text-white">
+  <div class="min-h-screen w-screen bg-zinc-900 text-white">
     <div>
       <header class="flex justify-between items-center p-4">
         <!-- Logo -->
@@ -179,7 +181,8 @@
           <div class="container-servicos">
             <div class="container-descricao-servicos lg:order-2">
               <h3 class="servicos">Musculação</h3>
-              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor laoreet elit massa interdum mi. Ultrices.</p>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor laoreet elit
+                massa interdum mi. Ultrices.</p>
               <button class="botao-principal">Saiba
                 Mais!</button>
             </div>
@@ -220,7 +223,7 @@
                 adipiscing
                 elit.
                 Tortor laoreet elit massa interdum mi. Ultrices.</p>
-                <button class="botao-principal">Saiba Mais!</button>
+              <button class="botao-principal">Saiba Mais!</button>
             </div>
 
             <div class="lg:order-1 card-imagem">
@@ -236,7 +239,8 @@
           <div class="container-servicos">
             <div class="container-descricao-servicos lg:order-2">
               <h3 class="servicos">Musculação</h3>
-              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor laoreet elit massa interdum mi. Ultrices.</p>
+              <p class="descricao-servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor laoreet elit
+                massa interdum mi. Ultrices.</p>
               <button class="botao-principal">Saiba Mais!</button>
             </div>
 
@@ -264,7 +268,8 @@
 
           <div class="
             grid grid-cols-1 gap-8 place-items-center
-            md:grid-cols-2 xl:grid-cols-4
+            md:grid-cols-2 
+            xl:grid-cols-4 lg:gap-4
           ">
             <div class="card-preco gradiente-card">
               <p class="preco-card-preco">
@@ -293,7 +298,7 @@
               <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
-            
+
               <h3 class="titulo-card-preco">Premium ++</h3>
 
               <p class="text-zinc-400 mb-5">
@@ -318,7 +323,7 @@
               <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
-            
+
               <h3 class="titulo-card-preco">Premium ++</h3>
 
               <p class="text-zinc-400 mb-5">
@@ -343,7 +348,7 @@
               <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
-            
+
               <h3 class="titulo-card-preco">Premium ++</h3>
 
               <p class="text-zinc-400 mb-5">
@@ -368,39 +373,108 @@
         </section>
 
         <!-- Gallery Section -->
-        <section class="px-2">
+        <section class="flex flex-col items-center w-full">
           <div class="text-center mb-20">
             <h2 class="titulo-secao mb-5">Galeria</h2>
-            <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus quam
-              corporis magni deserunt ratione, voluptatibus adipisci.</p>
+            <p class="text-zinc-400 px-8">Explore nosso espaço e inspire-se a treinar conosco</p>
           </div>
 
-          <div class="flex items-ceneter gap-4">
-            <div></div>
-            <div></div>
-          </div>
+          <!-- Container -->
+          <div class="
+            relative w-full max-w-xs h-48 shadow-lg 
+            sm:max-w-md sm:h-60
+            md:max-w-2xl md:h-[350px]
+            lg:max-w-4xl lg:h-[500px]
+            xl:max-w-5xl xl:h-[550px]">
 
-          <div class="grid grid-cols-1 gap-4">
-            <div>
-              <img src="./src/images/home-bg.jpg" alt="">
+            <!-- Div maior (imagem destacada) -->
+            <div id="mainImage" class="w-full h-full bg-center bg-cover rounded-lg shadow-2xl"
+              style="background-image: url('https://i.ibb.co/qCkd9jS/img1.jpg');">
             </div>
-            <div>
-              <img src="./src/images/home-bg.jpg" alt="">
+
+            <!-- Carrossel horizontal controlado -->
+            <div id="carousel" class="
+                flex w-36 h-20
+                absolute top-1/2 -translate-y-1/2 right-1 
+                space-x-2 overflow-hidden 
+                sm:w-[180px] sm:h-[120px] sm:items-center
+                md:w-[270px] md:h-[210px]
+                lg:w-[350px] lg:h-[300px] 
+                xl:w-[450px] xl:h-[400px]
+              ">
+              <!-- Cards -->
+              <div class="card card-galeria  transform transition-all duration-500 ease-in-out"
+                style="background-image: url('https://i.ibb.co/qCkd9jS/img1.jpg');"
+                data-img="https://i.ibb.co/qCkd9jS/img1.jpg"></div>
+
+              <div class="card card-galeria" style="background-image: url('https://i.ibb.co/jrRb11q/img2.jpg');"
+                data-img="https://i.ibb.co/jrRb11q/img2.jpg"></div>
+
+              <div class="card card-galeria" style="background-image: url('https://i.ibb.co/NSwVv8D/img3.jpg');"
+                data-img="https://i.ibb.co/NSwVv8D/img3.jpg"></div>
+
+              <div class="card card-galeria" style="background-image: url('https://i.ibb.co/ydXMPDQ/img4.jpg');"
+                data-img="https://i.ibb.co/ydXMPDQ/img4.jpg"></div>
+
+              <div class="card card-galeria" style="background-image: url('https://i.ibb.co/XZFkxKw/img5.jpg');"
+                data-img="https://i.ibb.co/XZFkxKw/img5.jpg"></div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="
+              flex absolute space-x-2
+              bottom-2 left-1/2
+              transform -translate-x-1/2
+              md:bottom-5
+            ">
+              <button class="botao-galeria prev">
+                <i class="fa-solid fa-arrow-left text-xs lg:text-[1.1rem] xl:text-[1.3rem]"></i>
+              </button>
+              <button class="botao-galeria next">
+                <i class="fa-solid fa-arrow-right text-xs lg:text-[1.1rem] xl:text-[1.3rem]"></i>
+              </button>
             </div>
           </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="w-full text-center">
-          <h2 class="titulo-secao mb-10">FAQ</h2>
+        <section class="flex flex-col sm:items-center space-y-4 w-full text-center p-4">
+          <h2 class="titulo-secao mb-24">FAQ</h2>
 
-          <div class="flex flex-col w-full p-4 border-b border-gradient">
-            <div class="flex items-center justify-between w-full">
-              <p>What is different of VR and AR?</p>
-              <div class="w-10 h-10 rounded-full border border-yellow-500 flex items-center justify-center">
-                icon
+          <div class="w-full sm:w-3/4">
+            <div class="container-faq">
+              <div class="pergunta-faq">
+                <h3 class="text-base lg:text-xl xl:text-2xl">Qual horário de Funcionamento ?</h3>
+                <button class="faq-btn botao-faq">
+                  <i class="fa-solid fa-chevron-down text-xs lg:text-sm"></i>
+                </button>
               </div>
+              <p class="hidden faq-response resposta-faq">De segunda a sexta das 6:00 as 22:00 e aos sábados das 8:00 as
+                13:00</p>
             </div>
+            
+            <div class="container-faq">
+              <div class="pergunta-faq">
+                <h3 class="text-base lg:text-xl xl:text-2xl">Qual horário de Funcionamento ?</h3>
+                <button class="faq-btn botao-faq">
+                  <i class="fa-solid fa-chevron-down text-xs lg:text-sm"></i>
+                </button>
+              </div>
+              <p class="hidden faq-response resposta-faq">De segunda a sexta das 6:00 as 22:00 e aos sábados das 8:00 as
+                13:00</p>
+            </div>
+
+            <div class="container-faq">
+              <div class="pergunta-faq">
+                <h3 class="text-base lg:text-xl xl:text-2xl">Qual horário de Funcionamento ?</h3>
+                <button class="faq-btn botao-faq">
+                  <i class="fa-solid fa-chevron-down text-xs lg:text-sm"></i>
+                </button>
+              </div>
+              <p class="hidden faq-response resposta-faq">De segunda a sexta das 6:00 as 22:00 e aos sábados das 8:00 as
+                13:00</p>
+            </div>
+            
           </div>
         </section>
 
@@ -416,10 +490,11 @@
                 <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
                 <h3 class="text-lg text-white font-bold ml-1 lg:text-2xl xl:text-3xl">WorldFit</h1>
               </div>
-  
-              <p class="font-bold tracking-wide text-zinc-200">Horario de atendimento Lorem Ipsum sit dolor Lorem Ipsum</p>
+
+              <p class="font-bold tracking-wide text-zinc-200">Horario de atendimento Lorem Ipsum sit dolor Lorem Ipsum
+              </p>
             </div>
-            
+
             <div class="border border-gradient lg:h-64 lg:border-2 lg:border-zinc-800"></div>
 
             <div class="flex flex-col flex-wrap">
