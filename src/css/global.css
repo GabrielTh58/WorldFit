@@ -41,9 +41,16 @@
         border-image: linear-gradient(to left, rgba(56, 63, 69, 0), #2c3338, rgba(26, 32, 35, 0)) 1;
     }
 
+    .redes-sociais{
+        @apply flex items-center shadow-lg cursor-pointer transition-all ease-in-out duration-300  hover:scale-110 hover:opacity-70;
+    }
+
 
     .container-porque-nos-escolher{
-        @apply flex items-center flex-col max-w-xs relative border rounded-xl p-4 mt-20 md:max-w-sm lg:w-[345px] lg:h-48;
+        @apply flex items-center flex-col max-w-xs relative border rounded-xl p-4 mt-20 transition-all
+        hover:scale-110
+        md:max-w-sm
+        lg:w-[345px] lg:h-48;
     }
 
     .container-descricao-porque-nos-ecscolher{
@@ -67,16 +74,18 @@
         @apply text-2xl font-bold text-yellow-500 mb-8 md:text-3xl lg:text-4xl lg:mb-20;
     }
 
+    .container-descricao-servicos{
+        @apply flex flex-col items-start justify-center mb-20 md:items-center lg:mb-0 lg:w-1/3 lg:items-start;
+    }
+
     .descricao-servicos{
-        @apply text-lg leading-loose text-zinc-400 text-center mb-9 lg:text-start md:w-3/4 lg:mb-12;
+        @apply w-full text-lg leading-loose text-zinc-400 text-center mb-9 lg:text-start md:w-3/4 lg:mb-12;
     }
 
     .botao-principal{
-        @apply text-lg font-black bg-yellow-500 hover:bg-yellow-400 py-3.5 px-9;
-    }
-
-    .container-descricao-servicos{
-        @apply flex flex-col items-start justify-center mb-20 md:items-center lg:mb-0 lg:w-1/3 lg:items-start;
+        @apply text-lg font-black bg-yellow-500 px-6 py-2 transition-all 
+        hover:scale-105 hover:shadow-lg hover:bg-gradient-to-br hover:from-yellow-500 hover:to-zinc-900
+        md:py-3.5 md:px-9;
     }
 
     .container-servicos{
@@ -89,9 +98,9 @@
     }
 
     .card-preco{
-        @apply flex flex-col items-start max-w-72 max-h-[485px] shadow-md 
+        @apply flex flex-col items-start max-w-72 max-h-[485px] shadow-md transition ease-in-out duration-300
         border border-transparent rounded-xl px-6 py-4
-        xl:max-w-80 xl:h-[565px];
+        hover:scale-110 
     }
 
     .preco-card-preco{
@@ -103,21 +112,32 @@
     }
 
     .divider-card-preco{
-        @apply w-full h-[1px] bg-white mb-5;
+        @apply w-full h-[1px] bg-[rgba(255,255,255,0.5)] mb-5 rounded-lg;
     }
 
     .lista-card-preco{
-        @apply flex flex-col font-bold  space-y-5 mb-6 xl:mb-10 text-sm;
+        @apply flex flex-col space-y-5 mb-6 xl:mb-10 text-sm;
+    }
+
+    .icone-card-preco{
+        @apply w-4 h-4 text-[10px] font-black bg-yellow-500 rounded-full;
     }
 
     .botao-card-preco{
-        @apply  w-full text-lg text-white font-black py-1 bg-[#222] xl:mt-8;
-        @apply  hover:opacity-80;
+        @apply  w-full text-sm rounded-xl text-white font-bold py-2 transition-all 
+        hover:scale-105 hover:shadow-lg hover:opacity-70
+        xl:mt-8;
+    } 
+
+    .botao-destaque-card-preco{
+        @apply w-full text-sm rounded-xl text-white font-bold py-2 transition-all 
+        hover:scale-105 hover:shadow-lg 
+        xl:mt-8
+        bg-gradient-to-br from-zinc-950 to-zinc-800 hover:from-black hover:to-zinc-900;
     }
 
-
     .titulo-secoes-footer{
-        @apply text-xl text-zinc-200  mb-5 xl:text-2xl
+        @apply text-xl text-zinc-200  mb-5 xl:text-2xl;
     }
 
     .card-galeria{
@@ -137,7 +157,9 @@
     }
 
     .container-faq{
-        @apply flex flex-col w-full border-b border-gradient mb-4 lg:mb-8;
+        @apply flex flex-col w-full border-b border-gradient mb-4 cursor-pointer
+        hover:opacity-70
+        lg:mb-8;
     }
 
     .botao-faq{
@@ -148,12 +170,12 @@
     }
 
     .pergunta-faq{
-        @apply flex items-center justify-between w-full mb-6 ;
+        @apply flex items-center justify-between w-full mb-6;
     }
-}
 
     .resposta-faq{
         @apply text-xs text-start text-zinc-400 mb-4 lg:text-sm;
     }
+}
 
    

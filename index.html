@@ -15,58 +15,66 @@
 
 <body>
   <div class="min-h-screen w-screen bg-zinc-900 text-white">
-    <div>
-      <header class="flex justify-between items-center p-4">
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
-          <h1 class="text-xl font-bold text-white ml-2">WorldFit</h1>
-        </div>
-
-        <!-- Navigation -->
-        <nav class="relative">
-          <!-- Checkbox for Hamburger Menu -->
-          <input id="menu-hamburguer" type="checkbox" class="hidden peer" />
-
-          <!-- Hamburger Icon -->
-          <label for="menu-hamburguer" class="flex flex-col justify-center items-center w-14 h-14 cursor-pointer">
-            <span
-              class="block w-8 h-[2px] bg-white transition-transform peer-checked:rotate-45 peer-checked:translate-y-[6px]"></span>
-            <span class="block w-8 h-[2px] bg-white mt-2 transition-opacity peer-checked:opacity-0"></span>
-            <span
-              class="block w-8 h-[2px] bg-white mt-2 transition-transform peer-checked:-rotate-45 peer-checked:-translate-y-[6px]"></span>
-          </label>
-
-
-          <!-- Navigation Links -->
-          <ul
-            class="hidden peer-checked:flex flex-col absolute top-16 right-0 bg-zinc-800 w-48 text-white rounded-lg shadow-lg">
-            <li class="p-2 hover:bg-zinc-700"><a href="#servicos">Serviços</a></li>
-            <li class="p-2 hover:bg-zinc-700"><a href="#precos">Preços</a></li>
-            <li class="p-2 hover:bg-zinc-700"><a href="#faq">FAQ</a></li>
-            <li class="p-2 hover:bg-zinc-700"><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <div class="xl:max-w-7xl lg:mx-auto">
       <!-- Main Section -->
-      <main class="flex flex-col flex-wrap items-center space-y-36">
+      <main class="flex flex-col flex-wrap items-center">
         <!-- Home Section -->
         <section class="
           bg-[url('./src/images/bg-home-main.webp')] bg-no-repeat bg-cover bg-center
           flex flex-col items-center justify-center w-full h-screen text-white mb-20 px-4
           sm:max-w-md 
           md:max-w-xl 
-          lg:max-w-full lg:flex-row lg:justify-center lg:items-center lg:gap-6 lg:px-0 lg:mt-12 
+          lg:max-w-full lg:justify-start lg:items-start lg:gap-6 lg:px-0 lg:pl-32 
           xl:gap-12
         ">
-          <div class="flex flex-col items-start justify-center mb-24 lg:max-w-md lg:mb-0 lg:px-2">
-            <h2 class="titulo-secao text-2xl leading-5 tracking-widest mb-8 lg:text-3xl xl:text-4xl">
+          <header class="flex justify-between items-center w-full p-4 mb-12 lg:mb-36">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <img class="max-w-12 max-h-6" src="./src/images/logo.png" alt="Logo WorldFit">
+              <h1 class="text-xl font-bold text-white ml-2">WorldFit</h1>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="relative">
+              <!-- Checkbox for Hamburger Menu -->
+              <input id="menu-hamburguer" type="checkbox" class="hidden peer" />
+
+              <!-- Hamburger Icon -->
+              <label for="menu-hamburguer" class="flex flex-col justify-center items-center w-14 h-14 cursor-pointer">
+                <span
+                  class="block w-8 h-[2px] bg-white transition-transform peer-checked:rotate-45 peer-checked:translate-y-[6px]"></span>
+                <span class="block w-8 h-[2px] bg-white mt-2 transition-opacity peer-checked:opacity-0"></span>
+                <span
+                  class="block w-8 h-[2px] bg-white mt-2 transition-transform peer-checked:-rotate-45 peer-checked:-translate-y-[6px]"></span>
+              </label>
+
+
+              <!-- Navigation Links -->
+              <ul
+                class="hidden peer-checked:flex flex-col absolute top-16 right-0 bg-zinc-800 w-48 text-white rounded-lg shadow-lg">
+                <li class="p-2 hover:bg-zinc-700"><a href="#servicos">Serviços</a></li>
+                <li class="p-2 hover:bg-zinc-700"><a href="#precos">Preços</a></li>
+                <li class="p-2 hover:bg-zinc-700"><a href="#faq">FAQ</a></li>
+                <li class="p-2 hover:bg-zinc-700"><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <div class="w-full flex flex-col items-start justify-center mb-6 lg:items-start lg:max-w-md lg:mb-12">
+            <h2 class="titulo-secao  text-xl leading-5 tracking-widest mb-8 lg:text-3xl xl:text-4xl">
               Transforme seu corpo, conquiste sua <span class="text-yellow-400">Melhor Versão!</span>
             </h2>
-            <p class="text-zinc-400 leading-loose mb-16 xl:mb-10">Treinos eficazes, suporte completo e resultados
+            <p class="text-zinc-300 mb-6 md:mb-16 xl:mb-10">Treinos eficazes, suporte completo e resultados
               garantidos. Comece hoje mesmo!</p>
             <button class="botao-principal">Saiba Mais!</button>
+          </div>
+
+          <div class="mt-6 self-start">
+            <ul class="flex gap-4">
+              <li class="redes-sociais"><i class="fa-brands fa-facebook-f text-sm lg:text-xl"></i></li>
+              <li class="redes-sociais"><i class="fa-brands fa-instagram text-base lg:text-2xl"></i></li>
+              <li class="redes-sociais"><i class="fa-brands fa-whatsapp text-base lg:text-2xl"></i></li>
+            </ul>
           </div>
 
           <!-- Image Section -->
@@ -90,7 +98,12 @@
           <h2 class="titulo-secao mb-20 text-center lg:mb-36">Por que nos Escolher ?</h2>
 
           <div class="w-full lg:flex lg:justify-between lg:gap-8">
-            <div class="container-porque-nos-escolher border-yellow-500 max-h-52 mt-16 md:max-w-sm lg:w-96 lg:h-56">
+            <div class="
+              container-porque-nos-escolher max-h-52 mt-16
+              border-yellow-500
+              md:max-w-sm
+              lg:w-96 lg:h-56
+            ">
               <div class="icone-porque-nos-escolher bg-yellow-500">
                 <span>
                   <svg width="38" height="40" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,29 +280,67 @@
           </h2>
 
           <div class="
-            grid grid-cols-1 gap-8 place-items-center
-            md:grid-cols-2 
-            xl:grid-cols-4 lg:gap-4
+            flex flex-col gap-8 items-center
+            md:flex-row lg:justify-between md:gap-2
+            xl:grid-cols-4
           ">
             <div class="card-preco gradiente-card">
               <p class="preco-card-preco">
                 R$90 <span class="text-sm font-thin">/ mês</span>
               </p>
               <h3 class="titulo-card-preco">Premium ++</h3>
-              <p class="text-zinc-400 mb-5">
+              <p class="text-zinc-200 mb-5 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
               <div class="divider-card-preco"></div>
 
               <ul class="lista-card-preco">
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco bg-zinc-950 "></i>Lorem
+                  Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco bg-zinc-950 "></i>Lorem
+                  Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco bg-zinc-950 "></i>Lorem
+                  Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco bg-zinc-950 "></i>Lorem
+                  Ipsum</li>
               </ul>
 
-              <button class="botao-card-preco">
+              <button class="botao-destaque-card-preco">
+                Escolher
+              </button>
+
+            </div>
+
+            <div class="card-preco bg-[rgba(28,28,28,0.7)]">
+              <p class="preco-card-preco">
+                R$90 <span class="text-sm font-thin">/ mês</span>
+              </p>
+
+              <h3 class="titulo-card-preco">Premium ++</h3>
+
+              <p class="text-zinc-300 mb-5 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+
+              <div class="divider-card-preco"></div>
+
+              <ul class="lista-card-preco">
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+              </ul>
+
+              <button class="botao-card-preco gradiente-card">
                 Escolher
               </button>
             </div>
@@ -301,20 +352,24 @@
 
               <h3 class="titulo-card-preco">Premium ++</h3>
 
-              <p class="text-zinc-400 mb-5">
+              <p class="text-zinc-300 mb-5 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
               <div class="divider-card-preco"></div>
 
               <ul class="lista-card-preco">
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
               </ul>
 
-              <button class="botao-card-preco">
+              <button class="botao-card-preco gradiente-card">
                 Escolher
               </button>
             </div>
@@ -326,45 +381,24 @@
 
               <h3 class="titulo-card-preco">Premium ++</h3>
 
-              <p class="text-zinc-400 mb-5">
+              <p class="text-zinc-300 mb-5 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
 
               <div class="divider-card-preco"></div>
 
               <ul class="lista-card-preco">
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
+                <li class="flex items-center gap-2"><i
+                    class="fa-solid fa-check flex justify-center items-center icone-card-preco"></i>Lorem Ipsum</li>
               </ul>
 
-              <button class="botao-card-preco">
-                Escolher
-              </button>
-            </div>
-
-            <div class="card-preco bg-[rgba(28,28,28,0.7)]">
-              <p class="preco-card-preco">
-                R$90 <span class="text-sm font-thin">/ mês</span>
-              </p>
-
-              <h3 class="titulo-card-preco">Premium ++</h3>
-
-              <p class="text-zinc-400 mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing
-              </p>
-
-              <div class="divider-card-preco"></div>
-
-              <ul class="lista-card-preco">
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-              </ul>
-
-              <button class="botao-card-preco">
+              <button class="botao-card-preco gradiente-card">
                 Escolher
               </button>
             </div>
@@ -452,7 +486,7 @@
               <p class="hidden faq-response resposta-faq">De segunda a sexta das 6:00 as 22:00 e aos sábados das 8:00 as
                 13:00</p>
             </div>
-            
+
             <div class="container-faq">
               <div class="pergunta-faq">
                 <h3 class="text-base lg:text-xl xl:text-2xl">Qual horário de Funcionamento ?</h3>
@@ -474,7 +508,7 @@
               <p class="hidden faq-response resposta-faq">De segunda a sexta das 6:00 as 22:00 e aos sábados das 8:00 as
                 13:00</p>
             </div>
-            
+
           </div>
         </section>
 
@@ -502,19 +536,19 @@
                 <div class="flex flex-col items-start justify-center mb-12 lg:mb-0">
                   <h4 class="titulo-secoes-footer">Páginas</h4>
                   <ul class="flex flex-col space-y-3 text-zinc-400 font-light">
-                    <li>
+                    <li class="hover:text-zinc-300">
                       <a href="#home">Página Inicial</a>
                     </li>
-                    <li>
+                    <li class="hover:text-zinc-300">
                       <a href="#servicos">Serviços</a>
                     </li>
-                    <li>
+                    <li class="hover:text-zinc-300">
                       <a href="#precos">Preços</a>
                     </li>
-                    <li>
+                    <li class="hover:text-zinc-300">
                       <a href="#galeria">Galeria</a>
                     </li>
-                    <li>
+                    <li class="hover:text-zinc-300">
                       <a href="#faq">FAQ</a>
                     </li>
                   </ul>
