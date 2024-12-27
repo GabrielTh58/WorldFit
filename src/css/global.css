@@ -41,8 +41,20 @@
         border-image: linear-gradient(to left, rgba(56, 63, 69, 0), #2c3338, rgba(26, 32, 35, 0)) 1;
     }
 
+    .itens-menu{
+        @apply text-base font-bold p-2 text-start hover:bg-zinc-800
+        lg:hover:bg-transparent lg:hover:opacity-75
+    }
+
+    .botao-principal{
+        @apply text-lg font-black bg-yellow-500 px-5 py-1.5 rounded-sm transition-all 
+        hover:scale-105 hover:shadow-lg hover:bg-gradient-to-br hover:from-yellow-500 hover:to-zinc-900
+        md:py-2 md:px-6
+        lg:py-3.5 lg:px-9;
+    }
+
     .redes-sociais{
-        @apply flex items-center shadow-lg cursor-pointer transition-all ease-in-out duration-300  hover:scale-110 hover:opacity-70;
+        @apply flex items-center text-yellow-600 shadow-lg cursor-pointer transition-all ease-in-out duration-300  hover:scale-110 hover:opacity-70;
     }
 
 
@@ -80,12 +92,6 @@
 
     .descricao-servicos{
         @apply w-full text-lg leading-loose text-zinc-400 text-center mb-9 lg:text-start md:w-3/4 lg:mb-12;
-    }
-
-    .botao-principal{
-        @apply text-lg font-black bg-yellow-500 px-6 py-2 transition-all 
-        hover:scale-105 hover:shadow-lg hover:bg-gradient-to-br hover:from-yellow-500 hover:to-zinc-900
-        md:py-3.5 md:px-9;
     }
 
     .container-servicos{
