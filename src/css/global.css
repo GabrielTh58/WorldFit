@@ -59,14 +59,13 @@
 
 
     .container-porque-nos-escolher{
-        @apply flex items-center flex-col max-w-xs relative border rounded-xl p-4 mt-20 transition-all
+        @apply relative flex items-center flex-col max-w-xs  border rounded-xl p-4 mt-20 transition-all
         hover:scale-110
         md:max-w-sm
-        lg:w-[345px] lg:h-48;
     }
 
     .container-descricao-porque-nos-ecscolher{
-        @apply flex flex-col items-center mt-8 mb-4;
+        @apply flex flex-col items-center mt-8 mb-4 lg:max-w-72 xl:max-h-96;
     }
 
     .titulo-porque-nos-escolher{
@@ -163,7 +162,7 @@
     }
 
     .container-faq{
-        @apply flex flex-col w-full border-b border-gradient mb-4 cursor-pointer
+        @apply flex flex-col w-full border-b border-gradient mb-4 px-3 cursor-pointer 
         hover:opacity-70
         lg:mb-8;
     }
