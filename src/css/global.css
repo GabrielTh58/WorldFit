@@ -25,15 +25,13 @@
 }
 
 @layer components {
+
     .titulo-secao {
         @apply text-3xl font-bold font-secondary lg:text-4xl xl:text-5xl text-white;
     }
 
-    .gradiente-card {
-        /* @apply bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r */
-        /* @apply bg-conic-to-b from-gray-900 via-gray-100 to-gray-900 */
+    .card-gradiente {
         @apply bg-gradient-to-tl from-amber-400 to-zinc-900;
-
     }
 
     .border-gradient {
@@ -54,29 +52,31 @@
     }
 
     .redes-sociais{
-        @apply flex items-center shadow-lg cursor-pointer transition-all ease-in-out duration-300  hover:scale-110 hover:opacity-70;
+        @apply hidden shadow-lg cursor-pointer transition-all ease-in-out duration-300
+        md:flex md:items-center 
+        hover:scale-110 hover:opacity-70;
     }
 
 
-    .container-porque-nos-escolher{
+    .porque-nos-escolher-container{
         @apply relative flex items-center flex-col max-w-xs  border rounded-xl p-4 mt-20 transition-all
-        hover:scale-110
+        hover:scale-110 
         md:max-w-sm
     }
 
-    .container-descricao-porque-nos-ecscolher{
+    .porque-nos-escolher-descricao-container{
         @apply flex flex-col items-center mt-8 mb-4 lg:max-w-72 xl:max-h-96;
     }
 
-    .titulo-porque-nos-escolher{
+    .porque-nos-escolher-titulo{
         @apply text-2xl font-bold  mb-4;
     }
 
-    .descricao-porque-nos-escolher{
+    .porque-nos-escolher-descricao{
         @apply text-zinc-400 text-center;
     }
 
-    .icone-porque-nos-escolher{
+    .porque-nos-escolher-icone{
         @apply flex items-center justify-center absolute top-[-30px] w-16 h-16 rounded-full z-10;
     }
 
@@ -85,67 +85,64 @@
         @apply text-2xl font-bold text-yellow-500 mb-8 md:text-3xl lg:text-4xl lg:mb-20;
     }
 
-    .container-descricao-servicos{
+    .servicos-descricao-container{
         @apply flex flex-col items-start justify-center mb-20 md:items-center lg:mb-0 lg:w-1/3 lg:items-start;
     }
 
-    .descricao-servicos{
+    .servicos-descricao{
         @apply w-full text-lg leading-loose text-zinc-400 text-center mb-9 lg:text-start md:w-3/4 lg:mb-12;
     }
 
-    .container-servicos{
+    .servicos-container{
         @apply flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-center lg:gap-24;
     }
-
 
     .card-imagem{
         @apply w-[320px] h-48 sm:w-[384px] sm:h-56 md:w-[448px] md:h-64 lg:w-[512px] lg:h-72 xl:w-[576px] xl:h-80;
     }
 
-    .card-preco{
+
+    .preco-card{
         @apply flex flex-col items-start max-w-72 max-h-[485px] shadow-md transition ease-in-out duration-300
         border border-transparent rounded-xl px-6 py-4
         hover:scale-110 
     }
 
-    .preco-card-preco{
+    .preco-card-valor{
         @apply text-2xl font-bold mr-2 my-4 lg:text-3xl;
     }
 
-    .titulo-card-preco{
+    .preco-titulo-card{
         @apply text-xl font-bold mb-2;
     }
 
-    .divider-card-preco{
+    .preco-card-divider{
         @apply w-full h-[1px] bg-[rgba(255,255,255,0.5)] mb-5 rounded-lg;
     }
 
-    .lista-card-preco{
+    .preco-card-lista{
         @apply flex flex-col space-y-5 mb-6 xl:mb-10 text-sm;
     }
 
-    .icone-card-preco{
+    .preco-card-icone{
         @apply w-4 h-4 text-[10px] font-black bg-yellow-500 rounded-full;
     }
 
-    .botao-card-preco{
-        @apply  w-full text-sm rounded-xl text-white font-bold py-2 transition-all 
+    .preco-card-botao{
+        @apply  w-full text-sm rounded-xl text-white font-bold py-2 transition-all
         hover:scale-105 hover:shadow-lg hover:opacity-70
         xl:mt-8;
     } 
 
-    .botao-destaque-card-preco{
+    .preco-card-botao-destaque{
         @apply w-full text-sm rounded-xl text-white font-bold py-2 transition-all 
         hover:scale-105 hover:shadow-lg 
         xl:mt-8
         bg-gradient-to-br from-zinc-950 to-zinc-800 hover:from-black hover:to-zinc-900;
     }
+   
 
-    .titulo-secoes-footer{
-        @apply text-xl text-zinc-200  mb-5 xl:text-2xl;
-    }
-
-    .card-galeria{
+    .galeria-card{
         @apply w-[60px] h-[75px] bg-center bg-cover rounded-xl shadow-lg cursor-pointer border border-gray-300
         sm:w-[80px] sm:h-[100px]
         md:w-[110px] md:h-[160px] md:rounded-2xl
@@ -153,7 +150,7 @@
         xl:w-[200px] xl:h-[300px];
     }
 
-    .botao-galeria{
+    .galeria-botao{
         @apply flex items-center justify-center w-6 h-6  
         border border-black rounded bg-white text-black hover:bg-[#ababab] hover:text-white hover:border-none
         md:w-8 md:h-8
@@ -161,25 +158,30 @@
         xl:w-12 xl:h-12;
     }
 
-    .container-faq{
+
+    .faq-container{
         @apply flex flex-col w-full border-b border-gradient mb-4 px-3 cursor-pointer 
         hover:opacity-70
         lg:mb-8;
     }
 
-    .botao-faq{
+    .faq-botao{
         @apply flex items-center justify-center w-6 h-6 
         rounded-full  border border-yellow-500 border-opacity-80
         cursor-pointer
         xl:w-8 xl:h-8;
     }
 
-    .pergunta-faq{
+    .faq-pergunta{
         @apply flex items-center justify-between w-full mb-6;
     }
 
-    .resposta-faq{
+    .faq-resposta{
         @apply text-xs text-start text-zinc-400 mb-4 lg:text-sm;
+    }
+
+    .footer-titulo-secoes{
+        @apply text-xl text-zinc-200  mb-5 xl:text-2xl;
     }
 }
 
