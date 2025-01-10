@@ -25,7 +25,15 @@
 }
 
 @layer components {
-
+    #mainImage {
+        transition: background-image 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      
+    .image-zoom {
+        transform: scale(1.1); /* Adiciona o efeito de zoom */
+    }
+      
+      
     .titulo-secao {
         @apply text-3xl font-bold font-secondary lg:text-4xl xl:text-5xl text-white;
     }
@@ -52,20 +60,21 @@
     }
 
     .redes-sociais{
-        @apply hidden shadow-lg cursor-pointer transition-all ease-in-out duration-300
+        @apply shadow-lg cursor-pointer transition-all ease-in-out duration-300
         md:flex md:items-center 
         hover:scale-110 hover:opacity-70;
     }
 
 
     .porque-nos-escolher-container{
-        @apply relative flex items-center flex-col max-w-xs  border rounded-xl p-4 mt-20 transition-all
-        hover:scale-110 
-        md:max-w-sm
+        @apply relative flex items-center flex-col max-w-xs h-48 border rounded-xl p-4 mt-20 transition-all
+        hover:scale-105
+        md:w-96
+        xl:max-h-96
     }
 
     .porque-nos-escolher-descricao-container{
-        @apply flex flex-col items-center mt-8 mb-4 lg:max-w-72 xl:max-h-96;
+        @apply flex flex-col items-center mt-8 mb-4 ;
     }
 
     .porque-nos-escolher-titulo{
@@ -90,7 +99,7 @@
     }
 
     .servicos-descricao{
-        @apply w-full text-lg leading-loose text-zinc-400 text-center mb-9 lg:text-start md:w-3/4 lg:mb-12;
+        @apply w-full text-lg leading-loose text-zinc-400 md:text-center mb-9 lg:text-start md:w-3/4 lg:w-full lg:mb-12;
     }
 
     .servicos-container{
@@ -151,8 +160,9 @@
     }
 
     .galeria-botao{
-        @apply flex items-center justify-center w-6 h-6  
-        border border-black rounded bg-white text-black hover:bg-[#ababab] hover:text-white hover:border-none
+        @apply flex items-center justify-center w-6 h-6 text-black
+        border rounded-full  bg-white 
+        hover:bg-[#ababab] hover:text-white hover:border-none
         md:w-8 md:h-8
         lg:w-10 lg:h-10
         xl:w-12 xl:h-12;
@@ -160,20 +170,19 @@
 
 
     .faq-container{
-        @apply flex flex-col w-full border-b border-gradient mb-4 px-3 cursor-pointer 
+        @apply flex flex-col w-full border-b border-gradient mb-4 cursor-pointer 
         hover:opacity-70
         lg:mb-8;
     }
 
     .faq-botao{
-        @apply flex items-center justify-center w-6 h-6 
-        rounded-full  border border-yellow-500 border-opacity-80
+        @apply flex items-center justify-center p-1
+        md:rounded-full  md:border md:border-yellow-500 md:border-opacity-80
         cursor-pointer
-        xl:w-8 xl:h-8;
     }
 
     .faq-pergunta{
-        @apply flex items-center justify-between w-full mb-6;
+        @apply flex items-center justify-between flex-1 mb-6;
     }
 
     .faq-resposta{
