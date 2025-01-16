@@ -40,7 +40,7 @@ Este foi um projeto freelance desenvolvido para uma academia local. O cliente bu
 
 <br>
 
-## Contato
+## 💬 Contato
 
 Gostou do projeto? Entre em contato! <br>
 📧 E-mail: contato.gabrielcorreia58@gmail.com <br>
