@@ -1729,6 +1729,26 @@ body{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/src\/assets\/images\/bg-home-tablet\.webp\'\)\]{
+  background-image: url('./src/assets/images/bg-home-tablet.webp');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/images\/bg-preco\.webp\'\)\]{
+  background-image: url('./src/assets/images/bg-preco.webp');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/images\/gym1\.webp\'\)\]{
+  background-image: url('./src/assets/images/gym1.webp');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/images\/gym2\.webp\'\)\]{
+  background-image: url('./src/assets/images/gym2.webp');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/images\/images\/gym1\.webp\'\)\]{
+  background-image: url('./src/assets/images/images/gym1.webp');
+}
+
 .from-\[\#171717\]{
   --tw-gradient-from: #171717 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(23 23 23 / 0) var(--tw-gradient-to-position);
@@ -1786,8 +1806,16 @@ body{
   background-position: left;
 }
 
+.bg-repeat{
+  background-repeat: repeat;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.bg-repeat-y{
+  background-repeat: repeat-y;
 }
 
 .p-4{
@@ -2183,8 +2211,8 @@ body{
     display: none;
   }
 
-  .lg\:h-80{
-    height: 20rem;
+  .lg\:h-64{
+    height: 16rem;
   }
 
   .lg\:h-\[200px\]{
@@ -2293,10 +2321,6 @@ body{
     align-self: flex-start;
   }
 
-  .lg\:border-2{
-    border-width: 2px;
-  }
-
   .lg\:border-zinc-800{
     --tw-border-opacity: 1;
     border-color: rgb(39 39 42 / var(--tw-border-opacity, 1));
@@ -2317,6 +2341,10 @@ body{
 
   .lg\:bg-\[url\(\'\.\/src\/images\/bg-home\.webp\'\)\]{
     background-image: url('./src/images/bg-home.webp');
+  }
+
+  .lg\:bg-\[url\(\'\.\/src\/assets\/images\/bg-home\.webp\'\)\]{
+    background-image: url('./src/assets/images/bg-home.webp');
   }
 
   .lg\:px-0{
