@@ -22,6 +22,7 @@
         --fonte-primaria: 'DM Sans', sans-serif;
         --fonte-secundaria: 'Bruno Ace', 'DM Sans', sans-serif;
     }
+    
 }
 
 @layer components {
@@ -160,9 +161,9 @@
     }
 
     .galeria-botao{
-        @apply flex items-center justify-center w-6 h-6 text-black
-        border rounded-full  bg-white 
-        hover:bg-[#ababab] hover:text-white hover:border-none
+        @apply flex items-center justify-center w-6 h-6 text-white
+        border rounded-full  bg-zinc-900 
+        hover:bg-gradient-to-r hover:from-yellow-500 hover:to-zinc-900 hover:text-white hover:border-none
         md:w-8 md:h-8
         lg:w-10 lg:h-10
         xl:w-12 xl:h-12;
@@ -176,8 +177,8 @@
     }
 
     .faq-botao{
-        @apply flex items-center justify-center p-1
-        md:rounded-full  md:border md:border-yellow-500 md:border-opacity-80
+        @apply flex items-center justify-center w-6 h-6
+        rounded-full  border border-yellow-500 border-opacity-80
         cursor-pointer
     }
 
