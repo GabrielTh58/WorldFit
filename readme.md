@@ -15,7 +15,8 @@ Este projeto consiste em uma **Landing Page** criada para uma academia, com o ob
   - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)  
   - [Tailwind CSS](https://tailwindcss.com/) *(caso utilizado no projeto)*  
 
----
+<br>
+
 
 ## 📖 Como Executar
 
@@ -31,16 +32,17 @@ Este projeto consiste em uma **Landing Page** criada para uma academia, com o ob
 
 3. **Abra o arquivo index.html no navegador.**
 
+<br>
 
 ## 🎯 Resultado Final
 
 Este foi um projeto freelance desenvolvido para uma academia local. O cliente buscava uma solução prática e eficiente para atrair novos alunos e destacar seus serviços. O feedback recebido foi extremamente positivo, destacando o design moderno e a usabilidade.
 
---
+<br>
 
 ## Contato
 
-Gostou do projeto? Entre em contato!
-📧 E-mail: contato.gabrielcorreia58@gmail.com
+Gostou do projeto? Entre em contato! <br>
+📧 E-mail: contato.gabrielcorreia58@gmail.com <br>
 🌐 LinkedIn: linkedin.com/in/gabrielcorreiadev
 
